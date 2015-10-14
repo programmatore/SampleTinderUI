@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleTinderUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gvv-3v-wDi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEP-hR-4Tb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VbZ-bB-myy">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0u-Cm-MPQ">
+                                            <rect key="frame" x="8" y="556" width="276" height="36"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <state key="normal" title="左">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="tapLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBd-E2-n2h"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pu-Q8-8r4">
+                                            <rect key="frame" x="316" y="556" width="276" height="36"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.047058824450000002" green="0.047058824450000002" blue="0.047058824450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <state key="normal" title="右">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="tapRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gix-mV-q96"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="8Pu-Q8-8r4" secondAttribute="trailing" constant="8" id="D68-m3-UaY"/>
+                                        <constraint firstItem="E0u-Cm-MPQ" firstAttribute="width" secondItem="8Pu-Q8-8r4" secondAttribute="width" id="Gwp-Aj-J2d"/>
+                                        <constraint firstItem="8Pu-Q8-8r4" firstAttribute="leading" secondItem="E0u-Cm-MPQ" secondAttribute="trailing" constant="32" id="Piu-IO-lC8"/>
+                                        <constraint firstAttribute="bottom" secondItem="8Pu-Q8-8r4" secondAttribute="bottom" constant="8" id="cWk-wq-1nQ"/>
+                                        <constraint firstItem="E0u-Cm-MPQ" firstAttribute="leading" secondItem="VbZ-bB-myy" secondAttribute="leading" constant="8" id="pbz-hb-jqj"/>
+                                        <constraint firstAttribute="bottom" secondItem="E0u-Cm-MPQ" secondAttribute="bottom" constant="8" id="whM-FB-3b6"/>
+                                    </constraints>
+                                </view>
+                                <animations/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LEP-hR-4Tb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BLL-Gn-Un9"/>
+                            <constraint firstAttribute="trailing" secondItem="LEP-hR-4Tb" secondAttribute="trailing" id="KLH-Zv-Odb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gvv-3v-wDi" secondAttribute="bottom" id="KY2-Tl-A4X"/>
+                            <constraint firstItem="Gvv-3v-wDi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X6n-Qc-eoS"/>
+                            <constraint firstItem="Gvv-3v-wDi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hZq-nK-0li"/>
+                            <constraint firstItem="LEP-hR-4Tb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nAH-in-cC4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LEP-hR-4Tb" secondAttribute="bottom" id="udx-Al-UBW"/>
+                            <constraint firstAttribute="trailing" secondItem="Gvv-3v-wDi" secondAttribute="trailing" id="xpv-JN-axa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Gvv-3v-wDi" id="wV5-AA-FKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="348"/>
+        </scene>
+    </scenes>
+</document>
