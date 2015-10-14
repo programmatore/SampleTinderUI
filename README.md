@@ -1,6 +1,6 @@
 # SampleTinderUI
 
-[]()を使ってTinderUIなるものを試してみました。
+[modocache/MDCSwipeToChoose](https://github.com/modocache/MDCSwipeToChoose)を使ってTinderUIなるものを試してみました。
 
 ## animation
 
